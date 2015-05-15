@@ -313,7 +313,7 @@ void ImagePacker::SortImages(int w, int h)
     for(int i = 0; i < images.size(); i++)
     {
         images.operator [](i).pos = QPoint(999999, 999999);
-        if(cropThreshold)
+        if(cropThreshold > -1)
         {
             size = images.at(i).crop.size();
         }

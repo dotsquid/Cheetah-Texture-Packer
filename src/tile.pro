@@ -31,6 +31,6 @@ HEADERS  += mainwindow.h \
 	maxrects.h
 FORMS    += mainwindow.ui
 
-QMAKE_CXXFLAGS += -Wextra -Werror
+#QMAKE_CXXFLAGS += -Wextra -Werror
 
 TRANSLATIONS += tile_ru.ts

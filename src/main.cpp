@@ -376,7 +376,7 @@ int main(int argc, char *argv[])
                     QSize size, sizeOrig;
                     QRect crop;
                     sizeOrig = packer.images.at(i).size;
-                    if(!packer.cropThreshold)
+                    if(packer.cropThreshold < 0)
                     {
                         size = packer.images.at(i).size;
                         crop = QRect(0, 0, size.width(), size.height());
@@ -418,7 +418,7 @@ int main(int argc, char *argv[])
                        packer.images.at(i).pos.y() + packer.border.t);
             QSize size;
             QRect crop;
-            if(!packer.cropThreshold)
+            if(packer.cropThreshold < 0)
             {
                 size = packer.images.at(i).size;
                 crop = QRect(0, 0, size.width(), size.height());
